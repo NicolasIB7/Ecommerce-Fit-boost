@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    scale: 1.5;
+    margin-top: 3%;
+    margin-right: 15px;
+}
