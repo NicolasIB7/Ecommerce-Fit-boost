@@ -1,13 +1,10 @@
-.container{
-    background-color: grey;
-    display: flex;
-    height: 150px;
+.container {
+  background-color: grey;
+  display: flex;
+  height: 150px;
 }
 
-.menu{
-    margin: auto;
-    margin-right: 30px;
-
-    
-
+.menu {
+  margin: auto;
+  margin-right: 30px;
 }
