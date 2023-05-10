@@ -6,7 +6,9 @@ import ItemDetailContainer from "./components/Detail/ItemDetailContainer";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import CartWidget from "./components/CartWidget/CartWidget";
+import Cart from "./components/Cart/Cart";
 import { Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
         <Route exact path='/item/:id' element={<ItemDetailContainer />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/about' element={<About />} />
-        <Route exact path='/cart' element={<CartWidget />} />
+        <Route exact path='/cart' element={<Cart />} />
       </Routes>
     </div>
   );
