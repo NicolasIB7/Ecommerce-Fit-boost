@@ -6,5 +6,20 @@
 
 .menu {
   margin: auto;
-  margin-right: 30px;
+  margin-right: 200px;
+}
+
+.logo{
+  align-self: center;
+  margin-left: 50px;
+}
+
+.logo:hover{
+  scale: 1.1;
+}
+
+.cart{
+  margin-right: 50px;
+  margin-top: 40px;
+  scale: 1.6;
 }

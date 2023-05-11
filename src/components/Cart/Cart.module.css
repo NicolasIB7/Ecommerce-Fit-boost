@@ -1,0 +1,15 @@
+.vaciar{
+    right: 40%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.container2{
+    display: flex;
+}
+
+.compra{
+    align-self: center;
+}

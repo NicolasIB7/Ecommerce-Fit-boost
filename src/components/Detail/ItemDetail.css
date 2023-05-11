@@ -1,0 +1,28 @@
+h4{
+    font-weight: bold;
+    width: 60%;
+    margin: auto;
+}
+
+img{
+    width: 270px;
+    height: 400px;
+}
+
+p{
+    width: 40%;
+    margin: auto;
+}
+
+h3{
+    font-size: 25px;
+}
+
+.container{
+    display: flex;
+}
+
+.cart{
+    margin-top: 10%;
+    margin-right: 10%;
+}

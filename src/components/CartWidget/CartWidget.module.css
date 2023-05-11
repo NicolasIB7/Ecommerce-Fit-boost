@@ -1,8 +1,13 @@
 .container{
-    display: flex;
+
     width: fit-content;
     height: fit-content;
     scale: 1.5;
     margin-top: 10%;
     margin-right: 40px;
+}
+
+.botones{
+    display: flex;
+    scale: 1.5;
 }

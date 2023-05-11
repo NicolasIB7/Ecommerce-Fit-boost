@@ -13,32 +13,35 @@ const NavBar = () => {
 
   return (
     <div className={style.container}>
-      <NavLink to='/'>
+      <NavLink to='/' className={style.logo}>
         <Avatar
           alt='Fit Boost'
-          src='/static/images/avatar/1.jpg'
+          src='https://t4.ftcdn.net/jpg/03/70/09/35/360_F_370093526_mJLYjlxn5Jb2pMsiQeyE7PMMnCp7NY8z.jpg'
           sx={{ width: 80, height: 80 }}
         />
       </NavLink>
-      <h3>Fit Boost</h3>
 
       <div className={style.menu}>
-        <NavLink to='/category/1'>Suplementos</NavLink>
-        <NavLink to='/category/2'>Shakers</NavLink>
+      <Button variant='contained' sx={{ marginLeft: 3,  }}>
+        <NavLink to='/category/1' style={{textDecoration:"none"}}>Suplementos</NavLink></Button>
+        <Button variant='contained' sx={{ marginLeft: 3 }}>
+        <NavLink to='/category/2' style={{textDecoration:"none"}}>Shakers</NavLink></Button>
 
         <Button variant='contained' sx={{ marginLeft: 3 }}>
-          <NavLink to='/about'>Acerca de nosotros</NavLink>{" "}
+          <NavLink to='/about' style={{textDecoration:"none"}}>Acerca de nosotros</NavLink>{" "}
         </Button>
         <Button variant='contained' sx={{ marginLeft: 3 }}>
           {" "}
-          <NavLink to='/contact'>Contacto</NavLink>{" "}
+          <NavLink to='/contact' style={{textDecoration:"none"}}>Contacto</NavLink>{" "}
         </Button>
       </div>
       <NavLink to='/cart'>
-        <CartWidget />
+        <ShoppingCartIcon className={style.cart} />
       </NavLink>
     </div>
   );
 };
 
 export default NavBar;
+
+
