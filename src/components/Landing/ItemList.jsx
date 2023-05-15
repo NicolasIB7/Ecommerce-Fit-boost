@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 const ItemList = (props) => {
   return (
-    <div >
+    <div class="cont">
       <h4>{props.nombre}</h4>
       <img src={props.imagen} alt='' />
       <h3>${" "}{props.precio}</h3>

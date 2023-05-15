@@ -1,25 +1,35 @@
-h4{
+.h2{
     font-weight: bold;
     width: 60%;
     margin: auto;
 }
 
-img{
+.imagen{
     width: 270px;
     height: 400px;
 }
 
-p{
+.p{
+    width: 85%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.h3{
+    font-size: 30px;
+    color: brown;
+}
+
+.containerD{
+    display: flex;
+    margin-top: 5%;
+    
+}
+.prod{
+    border: solid;
     width: 40%;
     margin: auto;
-}
-
-h3{
-    font-size: 25px;
-}
-
-.container{
-    display: flex;
+    padding: 5%;
 }
 
 .cart{

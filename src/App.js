@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 import CartWidget from "./components/CartWidget/CartWidget";
 import Cart from "./components/Cart/Cart";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer/Footer"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='/about' element={<About />} />
         <Route exact path='/cart' element={<Cart />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

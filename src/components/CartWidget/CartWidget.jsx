@@ -21,13 +21,13 @@ const CartWidget = ({onAdd}) => {
 
       <div className={style.botones}>
 
-      <Button variant="text" onClick={handleRestar}>
+      <Button variant="text" onClick={handleRestar} sx={{fontSize:25}}>
         {" "}
         -{" "}
         </Button>
       
 
-      <Button variant="text" onClick={handleSumar}>
+      <Button variant="text" onClick={handleSumar} sx={{fontSize:25}}>
         {" "}
         +{" "}
         </Button>

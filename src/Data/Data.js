@@ -109,4 +109,256 @@ export const data = [
     precio: 4500,
     categoria: 2,
   },
+  {
+    id: 9,
+    nombre: "Vaso mezclador",
+    imagen:
+      "https://d2r9epyceweg5n.cloudfront.net/stores/001/657/423/products/vaso-negro1-9a6a150d75bfe4cff216189527181375-640-0.jpg",
+    descripcion: `Capacidad: 600 ml Aprox.\n
+    Vaso en plástico polipropileno.\n
+    Medidas en ML y OZ\n\n
+    Objeto mezclador\n\n
+    Medidas:\n
+       Diámetro de la boca 9,5cm\n
+       Diámetro de la base 6,5cm\n
+       Altura del vaso 21,5cm`,
+    precio: 1200,
+    categoria: 2,
+  },
+  {
+    id: 10,
+    nombre: "Vaso Shaker Gym 600ml + Botella Plástica 750ml c/mosquetón",
+    imagen:
+      "https://d2r9epyceweg5n.cloudfront.net/stores/001/657/423/products/vaso-botella-011-5ded84f02edc95810e16675683241495-640-0.jpg",
+    descripcion: `Descripción Vaso
+
+ 
+
+    * Vaso en plástico polipropileno.
+    
+    * Medidas en ML y OZ
+    
+    * Objeto mezclador
+    
+     
+    
+    Medidas: 
+    
+     * Diámetro de la boca 9,5cm
+    
+     * Diámetro de la base 6,5cm
+    
+     * Altura del vaso 21,5cm
+    
+     
+    
+    Descripción Botella Deportiva 
+    
+     
+    
+    * Capacidad: 750 ml Aprox.
+    
+    * Material Plástico: PET.
+    
+    * Altura de la Botella: 23 cm sin tapa
+    
+    * Altura de la Botella : 26 cm con tapa
+    
+    * Diámetro de la Botella : 7 cm
+    
+    * Incluye mosquetón par`,
+    precio: 2200,
+    categoria: 2,
+  },
+  {
+    id: 11,
+    nombre: "SHAKER BOTTLE - ENA SPORT",
+    imagen:
+      "https://d3ugyf2ht6aenh.cloudfront.net/stores/306/768/products/shaker1-34f4243e3b7d81d26a16571485003834-640-0.webp",
+    descripcion: `SHAKER .
+    Para un batido sin grumos
+    
+    Ayuda a romper las partículas de polvo. Es ideal para aquellos productos en polvo que requieran una disolución excelente, tanto en agua como en leche. El Vaso Batidor presenta en su interior un aro en forma de estrella que rompe las partículas de polvo disolviéndolas con el batido. Con nuestro exclusivo vaso shaker, mezclar incluso las más espesas de las proteínas es facilísimo.
+    
+    A donde sea que vayas lleva con vos tu Vaso Batidor ENA.
+    
+    Seguro para lavavajillas, microondas y freezer. Su tamaño lo hace ideal para que mezcles tus suplementos preferidos de ENA. Con una tapa a prueba de derrames. Fácil de limpiar.
+    
+    PRESENTACIÓN:
+    Vaso de 500 cm3 (capacidad de batido).`,
+    precio: 2000,
+    categoria: 2,
+  },
+  {
+    id: 12,
+    nombre: "Bcaa Premium x120 de Mervick",
+    imagen:
+      "https://www.demusculos.com/shop/147-medium_default/bcaa-premium-mervick.jpg",
+    descripcion: `Aminoácidos Ramificados de tipo BCAA
+    Ideales para recuperación, masa muscular y aumento de rendimiento
+    BCAA PREMIUM ESTA DESARROLLADO EN BASE A AMINOÁCIDOS DE CADENA RAMIFICADA Y VITAMINAS, ELABORADO CON MATERIAS PRIMAS DE ALTA PUREZA Y CALIDAD. DE ALTA EFECTIVIDAD TANTO EN DEPORTISTAS RESISTENCIA COMO EN SOBRECARGA`,
+    precio: 3500,
+    categoria: 1,
+  },
+  {
+    id: 13,
+    nombre: "Bcaa 4000 de Gentech x120 comprimidos",
+    imagen:
+      "https://www.demusculos.com/shop/190-medium_default/bcaa-4000-gentech.jpg",
+    descripcion: `BCAA 4000 - Los aminoácidos ofrecen un soporte para entrenamientos intensos. La estructura muscular se forma por proteína, la proteína por aminoácidos. No hay aumento de masa muscular si no consumimos la cantidad de aminoácidos necesaria. DISMINUCIÓN DE RUPTURA MUSCULAR. Refuerza y protege a las proteínas musculares en esfuerzos de larga duración.`,
+    precio: 3260,
+    categoria: 1,
+  },
+  {
+    id: 14,
+    nombre: "Creatina 300 grs de XXL Pro Nutrition",
+    imagen:
+      "https://www.demusculos.com/shop/59-medium_default/creatina-300-grs-xxl.jpg",
+    descripcion: `La creatina de monohidrato es buena para prevenir la fatiga del músculo.
+
+    Además maximiza la recuperación.
+    
+    A mayor recuperación, mas rendimiento.La creatina XXL Nutrition esta 100% micronizada, esto permite una mejor asimilación.
+
+    Presentación: 300 grs.
+    
+    Una de las formas de tomarla es: 1 medida antes de entrenar para prevenir la fatiga, 1 medida luego de entrenar, para maximizar la recuperación.`,
+    precio: 10600,
+    categoria: 1,
+  },
+  {
+    id: 15,
+    nombre: "Extreme Mass Gainer 1.75 o 1.5 kg de Hoch Sport",
+    imagen:
+      "https://www.demusculos.com/shop/1683-medium_default/extreme-mass-gainer-175-kg-hoch-sport.jpg",
+    descripcion: `Ganador de Peso y Masa Muscular. 100% Instantáneo.
+
+    GAINER EXTREME MASS es un Hipercalórico que combina Carbohidratos simples y complejos, Proteínas de huevo y suero, Vitaminas y Minerales en dosis equilibradas, para aquellas personas que necesitan incorporar una dosis más elevada de calorías en su día a día. 
+    
+    Aumenta los niveles de energía, promueve el desarrollo de masa muscular, acelera la recuperación, reduce el dolor muscular y mejora la función del sistema inmune.`,
+    precio: 4700,
+    categoria: 1,
+  },
+  {
+    id: 16,
+    nombre: "Proteína Cappuccino 1.3 kilos Wake Break de Gentech",
+    imagen:
+      "https://www.demusculos.com/shop/28-medium_default/wake-break-de-gentech.jpg",
+    descripcion: `Wake Break Gentech Cappuccino es la combinación perfecta de proteína whey de máxima calidad con extractos naturales de cafeína, ideal para comenzar el día con toda la energía. En el desayuno, o en cualquier momento que lo necesites, es el combustible perfecto para tu rutina diaria.
+
+    Las proteínas son imprescindibles para el correcto funcionamiento del organismo. Generan y mantienen los tejidos de los distintos órganos del cuerpo: músculos, huesos, corazón, sistema digestivo, glándulas endócrinas, piel, etc.
+    Verter 1 medida (30 g). de WakeBreak en 200 cc de agua fría o leche descremada, mezclar con el shaker o batidor. Dejar reposar 30 segundos y listo para consumir.`,
+    precio: 9430,
+    categoria: 1,
+  },
+  {
+    id: 17,
+    nombre: "Vitaminas y Minerales de Mervick x120 comprimidos",
+    imagen:
+      "https://www.demusculos.com/shop/106-medium_default/vitaminas-y-minerales-de-mervick-x120-comprimidos.jpg",
+    descripcion: `Multivitamínico de Mervick-Lab es un suplemento dietario que cubre el 100% de las recomendaciones de vitaminas y un importante aporte de minerales. Aporta una dosis extra de las vitaminas atioxidantes.
+
+    Este complejo ha sido desarrollado con el objetivo de cubrir el 100% de las recomendaciones vigentes actualmente para las vitaminas y un porcentaje importante de los principales minerales involucrados en los procesos atléticos MULTIVITAMÍNICO MERVICK esta desarrollado con meterias primas de excelente calidad, sometidas a un proceso que asegura estabilidad de las mismas.`,
+    precio: 2627,
+    categoria: 1,
+  },
+  {
+    id: 18,
+    nombre: "( 2 UNIDADES) Vitaminas y Minerales de Gentech x60 comprimidos",
+    imagen:
+      "https://www.demusculos.com/shop/2868-medium_default/multivitamin-60-gentech-X2.jpg",
+    descripcion: `Los multivitamínicos, son uno de los suplementos dietéticos consumidos tanto para compensar dietas pobres o escasas en nutrientes, como para reforzarlas ante grandes gastos de calorías en entrenamientos intensos.
+
+    Combinan diferentes vitaminas, como su nombre indica, proporcionándonos beneficios adicionales para el cuerpo.`,
+    precio: 3767,
+    categoria: 1,
+  },
+  {
+    id: 19,
+    nombre: "Vitamina C de Natuliv Ena sport x30",
+    imagen:
+      "https://www.demusculos.com/shop/466-medium_default/natuliv-ena-sport-vitamina-c.jpg",
+    descripcion: `La Vitamina C es tal vez la más conocida y utilizada de todas las vitaminas.
+
+    Ayuda a fortalecer el sistema inmune, es antioxidante, anti-stress e indispensable en el metabolismo del ácido fólico.
+    
+    Colabora protegiendo contra los efectos de la contaminación ambienta y protegiendo al organismo contra los efectos nocivos de los radicales libres, ayudando a aumentar las defensas del organismo
+    Caja de 30 comprimidos de 500 mg. c/u`,
+    precio: 1192,
+    categoria: 1,
+  },
+  {
+    id: 20,
+    nombre: "Complejo B en cápsulas o tabletas Complex-B DMSport",
+    imagen:
+      "https://www.demusculos.com/shop/2634-medium_default/complejo-b.jpg",
+    descripcion: `Ideal para todo tipo de deportes. Vitamina B1, B6 y B12
+    La vitamina B1 es necesaria para la producción de energía, la salud de los nervios y para el mantenimiento de la función mental, incluyendo la concentración y la memoria. Además, la tiamina tiene capacidad antioxidante y también puede tener efecto diurético leve.
+    `,
+    precio: 2190,
+    categoria: 1,
+  },
+  {
+    id: 21,
+    nombre: "Omelette 500 grs, Pizza y Pancake proteico Pulver",
+    imagen:
+      "https://www.demusculos.com/shop/292-medium_default/pizza-omelette-pancake.jpg",
+    descripcion: `Suplemento dietario en polvo a base de proteína de clara de huevo (albúmina) para preparar un omelette sabor jamón y queso. Apto para celíacos, libre de gluten.
+
+    Aporta proteína de alto valor biológico para lograr un omelette proteico de gran saciedad, ideal para organizar un plan alimentario rico en proteínas. De utilidad para personas que necesitan perder peso o mantener el peso con una buena nutrición. Cada omelette (porción de 35 gr) aporta 28 gr de proteína, con tan sólo 112 calorías.
+    `,
+    precio: 12121,
+    categoria: 1,
+  },
+  {
+    id: 22,
+    nombre: "Shake Mix de Genetic x550 grs Remplazo de Comida",
+    imagen:
+      "https://www.demusculos.com/shop/1004-medium_default/shake-mix-genetic.jpg",
+    descripcion: `Nuevo Batido para Dieta SHAKE MIX GENETIC
+
+    Pote de 550 Gramos - 22 Servicios.
+    
+    El producto reemplaza comidas más exitoso para perder tus kilos de más.
+    
+    Es un batido que aporta proteína que ayuda a satisfacer el apetito. Contiene 11 vitaminas y 12 minerales incluyendo antioxidantes, además de hierbas y fibra. El polvo Shake Mix tiene solo 79 kilocalorías y menos de 2 gramos de grasa por porción.`,
+    precio: 2572,
+    categoria: 1,
+  },
+  {
+    id: 23,
+    nombre: "Iron Barr de Gentech x 20 unidades",
+    imagen:
+      "https://www.demusculos.com/shop/127-medium_default/iron-bar-x-20.jpg",
+    descripcion: `Una de las mejores barras de proteína del mercado. Ideal para recuperación, rendimiento y aumento de la energía.`,
+    precio: 5442,
+    categoria: 1,
+  },
+  {
+    id: 24,
+    nombre: "ZMA-B de Hoch Sport x 120 c/u",
+    imagen:
+      "https://www.demusculos.com/shop/1152-medium_default/zma-b-hoch-sport.jpg",
+    descripcion: `Ideal para aumentar los niveles de testosterona, además de incrementar la masa muscular y aumentar el rendimiento junto con la energía.`,
+    precio: 4245,
+    categoria: 1,
+  },
+  {
+    id: 25,
+    nombre: "Creatina 250 grs Gentech",
+    imagen:
+      "https://www.demusculos.com/shop/794-medium_default/creatina-250-gentech.jpg",
+    descripcion: `Previene la fatiga, aumenta el rendimiento y la masa muscular. Sin sabor. Fabricado por Gentech en Argentina.`,
+    precio: 9284,
+    categoria: 1,
+  },
+  {
+    id: 26,
+    nombre: "Creatina 500 gramos de Xtrenght Nutrition",
+    imagen:
+      "https://www.demusculos.com/shop/892-medium_default/creatina-500-gramos-de-xtrenght-nutrition.jpg",
+    descripcion: `Ideal para aumento de masa muscular. Previene la fatiga, aumenta la resistencia, energía y tamaño muscular.`,
+    precio: 19000,
+    categoria: 1,
+  },
 ];

@@ -48,12 +48,12 @@ function ItemDetailContainer() {
   return (
     <div>
       {product ? (
-        <div class="container" >
-          <div>
-          <h4>{product.nombre}</h4>
-          <img src={product.imagen} alt='' />
-          <p>{product.descripcion}</p>
-          <h3>$ {" "}{product.precio}</h3>
+        <div class="containerD" >
+          <div class="prod">
+          <h2 class="h2">{product.nombre}</h2>
+          <img src={product.imagen} alt='' class="imagen" />
+          <p class="p">{product.descripcion}</p>
+          <h3 class="h3">$ {" "}{product.precio}</h3>
           </div>
           <div class="cart">
           <CartWidget onAdd={handleAdd} />
