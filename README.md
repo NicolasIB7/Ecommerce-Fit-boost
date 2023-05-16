@@ -45,7 +45,7 @@ Esto iniciará el servidor y podrás acceder a la aplicación en tu navegador a 
 ## Dependencias utilizadas:
 
 - Se utilizó MUI material para realizar diferentes estilos y detalles en cuanto a lo visual, además se utilizó para aplicar ciertas funcionalidades en el proyecto tales como menú desplegable, botones, carrito de compras dinámico o el formulario desplegable que se encuentra en la sección para realizar la compra. Se decidió utilizar este tecnología por lo sencillo que es utilizarla y lo fácil que es editar o agregarle estilos a los mismos componentes que proporciona material.
--
+
 - Se utilizó react-icons para agregar iconos tales como instagram o linkedin, simplemente para darle un estilo o una visual más bonita y acorde.
 
 - Se utilizó sweet alert, en este caso lo utilicé para reemplazar el "alert", es una ventana emergente la cual tiene un diseño bastante más profesional y elegante. Por ejemplo al realizar la compra o agregar productos al carrito, nos aparece esta alerta avisandonos de la acción en concreto.
