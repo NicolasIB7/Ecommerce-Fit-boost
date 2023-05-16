@@ -82,7 +82,7 @@ const NavBar = () => {
 
 
         <MenuItem onClick={handleClose}> <NavLink to='/category/2' style={{textDecoration:"none"}}>Shakers </NavLink></MenuItem>
-        <MenuItem onClick={handleClose}> <NavLink to='/category/1' style={{textDecoration:"none"}}>My account</NavLink></MenuItem>
+        <MenuItem onClick={handleClose}> <NavLink to='/category/1' style={{textDecoration:"none"}}>Suplementos</NavLink></MenuItem>
       </Menu>
 
 

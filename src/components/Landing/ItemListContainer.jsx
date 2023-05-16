@@ -1,46 +1,10 @@
-// import React, { useEffect, useState } from "react";
-// import style from "./ItemListContainer.module.css";
-// import {data} from "../../Data/Data";
-// import ItemList from "./ItemList";
-// import { useParams } from "react-router-dom";
-
-// const ItemListContainer =(props)=>{
-
-//     const {id}=useParams();
-
-//     const [listProducts, setListProducts]=useState([])
-
-//     //simulo useEffect
-
-//     // useEffect(()=>{
-
-//     // },[])
-
-//     return(
-//         <div>
-//         {data.map((listProducts)=>{
-//                return( <ItemList
-//                 id={listProducts.id}
-//                 nombre={listProducts.nombre}
-//                 imagen={listProducts.imagen}
-//                 descripcion={listProducts.descripcion}
-//                 precio={listProducts.precio}
-//                 categoria={listProducts.categoria}
-//                 />)
-
-//             })}
-
-//         </div>
-//     )
-// }
-
-// export default ItemListContainer;
-
 import React, { useEffect, useState } from "react";
 import style from "./ItemListContainer.module.css";
-import { data } from "../../Data/Data";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { getProducts, getProductByCategory } from "../../utils";
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const ItemListContainer = (props) => {
   const { id } = useParams();
@@ -49,16 +13,47 @@ const ItemListContainer = (props) => {
 
   useEffect(() => {
     if (id) {
-      const filteredProducts = data.filter(
-        (product) => product.categoria === parseInt(id)
-      );
-      setListProducts(filteredProducts);
+      getProductByCategory(id)
+        .then((res) => {
+          setListProducts(res);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     } else {
-      setListProducts(data);
+      getProducts()
+        .then((res) => {
+          setListProducts(res);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     }
   }, [id]);
+  
+
+
+//   useEffect(() => {
+// getProducts().then((res)=>{
+//   if (id) {
+//     const filteredProducts = res.filter(
+//       (product) => product.categoria === parseInt(id)
+//     );
+//     setListProducts(filteredProducts);
+//   } else {
+//     setListProducts(res);
+//   }
+
+// })
+
+   
+//   }, [id]);
 
   return (
+<div>
+
+    {listProducts.length>0 ? (
+
     <div className={style.container}>
       {listProducts.map((product) => (
         <ItemList
@@ -70,6 +65,23 @@ const ItemListContainer = (props) => {
           categoria={product.categoria}
         />
       ))}
+    </div>
+    ):
+
+    (
+
+
+      <Box sx={{ display: 'flex', justifyContent:"center", marginTop:"15%", marginBottom:"30%", scale:"1.3" }}>
+      <CircularProgress />
+    </Box>
+    
+    
+    
+    )
+    
+    }
+
+
     </div>
   );
 };

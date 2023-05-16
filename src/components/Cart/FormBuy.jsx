@@ -10,10 +10,11 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import {saveSale} from "../../utils";
 
 function FormBuy({total, price}) {
 
-    const { clearCart } = useContext(contexto);
+    const { clearCart, cart } = useContext(contexto);
   const navigate = useNavigate();
 
 
@@ -44,6 +45,19 @@ function FormBuy({total, price}) {
       setPhone(e.target.value);
     };
 
+
+
+    const venta={
+      carrito: cart,
+      user:{
+        nombre: name,
+        telefono: phone,
+        email:email
+      },
+      total:total,
+      totalPrice:price,
+    }
+
     const handleBuy=()=>{
         Swal.fire({
           title: '¿Está seguro que desea realizar la compra?',
@@ -53,9 +67,13 @@ function FormBuy({total, price}) {
         }).then((result) => {
     
           if (result.isConfirmed) {
-            Swal.fire('Se realizó tu pedido', 'Muchas gracias por la compra, en minutos te llegará un mail con los detalles de tu pedido.', 'success').then(() => {
+            saveSale(venta)
+            .then((id)=>{
+            Swal.fire('Se realizó tu pedido', `Muchas gracias por la compra, el id de tu pedido es ${id}`, 'success').then(() => {
               clearCart()
               navigate("/");});
+            })
+
       }})
     
       }

@@ -1,13 +1,14 @@
-
-
 import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-import { data } from "../../Data/Data";
 import {contexto} from "../CustomProvider"
 import CartWidget from "../CartWidget/CartWidget";
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import "./ItemDetail.css";
+import { getProducts } from "../../utils";
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+import { getProductDetail } from "../../utils";
 
 
 function ItemDetailContainer() {
@@ -16,6 +17,7 @@ function ItemDetailContainer() {
   const { addToCart } = useContext(contexto)
 
   const [product, setProduct] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleAdd = (count) => {
     Swal.fire({
@@ -39,15 +41,36 @@ function ItemDetailContainer() {
   };
 
   useEffect(() => {
-    const filteredProducts = data.filter(
-      (product) => product.id === parseInt(id)
-    );
-    setProduct(filteredProducts[0]);
+    getProductDetail(id).then((res)=>{
+      setProduct(res);
+      setIsLoading(false);
+    
+    })
   }, [id]);
+
+
+  // useEffect(() => {
+  //   getProducts().then((res)=>{
+  //     const filteredProducts = res.filter(
+  //       (product) => product.id === id
+  //     );
+  //     setProduct(filteredProducts[0]);
+  //     setIsLoading(false);
+    
+  //   })
+  // }, [id]);
 
   return (
     <div>
-      {product ? (
+      {isLoading ? (
+        <Box sx={{ display: 'flex', justifyContent:"center", marginTop:"15%", marginBottom:"30%", scale:"1.3" }}>
+        <CircularProgress />
+      </Box>
+      
+      )
+      
+      :
+      product ? (
         <div class="containerD" >
           <div class="prod">
           <h2 class="h2">{product.nombre}</h2>
@@ -60,8 +83,10 @@ function ItemDetailContainer() {
           </div>
         </div>
       ) : (
-        <p>No se encontró el producto.</p>
-      )}
+        <div style={{fontSize:50, marginTop:"15%", marginBottom:"40%"}}>No se encontró el producto.</div>
+      )
+    
+    }
     </div>
   );
 }
