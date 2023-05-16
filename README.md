@@ -23,6 +23,7 @@ git clone https://github.com/tu-usuario/nombre-del-repositorio.git
 
 ```bash
 cd nombre-del-repositorio
+```bash
 npm install
 
 3. Iniciar el proyecto: 
