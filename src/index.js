@@ -6,16 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import CustomProvider from "./components/CustomProvider";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-
-    <BrowserRouter>
+  <BrowserRouter>
     <CustomProvider>
       <App />
-      </CustomProvider>
-    </BrowserRouter>
-
+    </CustomProvider>
+  </BrowserRouter>
 );
 
 reportWebVitals();

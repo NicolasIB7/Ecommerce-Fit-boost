@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import style from "./Contact.module.css";
 import Swal from "sweetalert2";
 
-
 function Form() {
   const emailRef = useRef();
   const nameRef = useRef();
@@ -109,15 +108,17 @@ function Form() {
         </div>
 
         {!isNameValid || !isEmailValid || !isAsuntoValid ? (
-          <button className={style.boton} disabled style={{backgroundColor:"grey"}}>Enviar</button>
-        ) : (<button
-          type='submit'
-          onClick={handleSubmit}
-          className={style.boton}>
-          Enviar
-        </button>)}
-        
-        
+          <button
+            className={style.boton}
+            disabled
+            style={{ backgroundColor: "grey" }}>
+            Enviar
+          </button>
+        ) : (
+          <button type='submit' onClick={handleSubmit} className={style.boton}>
+            Enviar
+          </button>
+        )}
       </form>
     </div>
   );

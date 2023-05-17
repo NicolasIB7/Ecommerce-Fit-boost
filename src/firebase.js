@@ -1,6 +1,5 @@
-
 import { initializeApp } from "firebase/app";
-import { getFirestore} from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAQ36n4UplQPcdrZuOeJxyxbbuGdnLX1hk",
@@ -9,10 +8,9 @@ const firebaseConfig = {
   storageBucket: "fit-boost-44345.appspot.com",
   messagingSenderId: "534125384439",
   appId: "1:534125384439:web:9697627edd4d8eccd3f9f2",
-  measurementId: "G-TEBTVL14VF"
+  measurementId: "G-TEBTVL14VF",
 };
-
 
 const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app)
+export const db = getFirestore(app);

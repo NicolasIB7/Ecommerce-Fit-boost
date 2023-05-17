@@ -1,17 +1,16 @@
-.container{
-
-    width: fit-content;
-    height: fit-content;
-    scale: 1.5;
-    margin-top: 10%;
-    margin-right: 40px;
-    border: 1px solid grey;
-    border-radius: 5%;
-    background-color: rgba(255, 0, 0, 0.226);
-    padding: 5%;
+.container {
+  width: fit-content;
+  height: fit-content;
+  scale: 1.5;
+  margin-top: 10%;
+  margin-right: 40px;
+  border: 1px solid grey;
+  border-radius: 5%;
+  background-color: rgba(255, 0, 0, 0.226);
+  padding: 5%;
 }
 
-.botones{
-    display: flex;
-    font-size: 10%;
+.botones {
+  display: flex;
+  font-size: 10%;
 }

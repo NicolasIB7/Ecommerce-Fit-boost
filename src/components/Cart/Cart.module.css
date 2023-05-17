@@ -1,22 +1,18 @@
-.vaciar{
-    right: 10%;
-    height: fit-content;
-    
+.vaciar {
+  right: 10%;
+  height: fit-content;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
 }
-.container2{
-    display: flex;
+.container2 {
+  display: flex;
 }
 
-
-
-.card{
-    border: solid 1px rgba(0, 0, 0, 0.075);
-    padding: 1%;
-    
+.card {
+  border: solid 1px rgba(0, 0, 0, 0.075);
+  padding: 1%;
 }

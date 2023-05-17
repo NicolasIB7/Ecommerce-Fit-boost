@@ -9,12 +9,11 @@
   margin-right: 200px;
 }
 
-.logo{
+.logo {
   align-self: center;
   margin-left: 50px;
 }
 
-.logo:hover{
+.logo:hover {
   scale: 1.1;
 }
-

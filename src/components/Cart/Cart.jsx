@@ -1,11 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from "react";
 import { contexto } from "../CustomProvider";
-import { useNavigate } from 'react-router-dom';
 import style from "./Cart.module.css";
-import DeleteIcon from '@mui/icons-material/Delete';
-import Button from '@mui/material/Button';
-import FormBuy from './FormBuy';
-
+import DeleteIcon from "@mui/icons-material/Delete";
+import Button from "@mui/material/Button";
+import FormBuy from "./FormBuy";
 
 const Cart = () => {
   const { cart, removeProduct, clearCart } = useContext(contexto);
@@ -23,62 +21,70 @@ const Cart = () => {
   const totalPrice = () => {
     let sum = 0;
     for (let i = 0; i < cart.length; i++) {
-      sum += (cart[i].count * cart[i].product.precio);
+      sum += cart[i].count * cart[i].product.precio;
     }
     return sum;
   };
 
-  
-
   useEffect(() => {
     const calculatedTotal = totalCount();
-    const calculatedPrice=totalPrice();
+    const calculatedPrice = totalPrice();
     setTotal(calculatedTotal);
     setPrice(calculatedPrice);
   }, [cart]);
 
   const handleClear = (e) => {
-    e.preventDefault()
-    clearCart()
-  }
+    e.preventDefault();
+    clearCart();
+  };
 
   const handleRemove = (productId) => {
     removeProduct(productId);
-  }
+  };
 
   return (
-
     <div className={style.container}>
+      {cart.length > 0 ? (
+        <div className={style.container2}>
+          <Button
+            onClick={handleClear}
+            color='error'
+            variant='outlined'
+            startIcon={<DeleteIcon />}
+            className={style.vaciar}>
+            {" "}
+            Vaciar carrito
+          </Button>
 
+          {cart.map((item, index) => (
+            <div key={index} className={style.card}>
+              <h4>{item.product.nombre}</h4>
+              <img
+                src={item.product.imagen}
+                alt=''
+                style={{ width: 150, height: 240 }}
+              />
+              <h4>Precio: $ {item.product.precio * item.count}</h4>
+              <h4>Cantidad: {item.count} unidades</h4>
+              <Button
+                variant='outlined'
+                color='error'
+                onClick={() => handleRemove(item.product.id)}
+                sx={{ marginTop: "3%" }}>
+                Quitar producto del carrito
+              </Button>
+            </div>
+          ))}
 
-    {cart.length>0 ? (
-      <div className={style.container2}>
-
-
-      <Button onClick={handleClear} color="error" variant="outlined" startIcon={<DeleteIcon /> } className={style.vaciar}> Vaciar carrito</Button>
-
-      {cart.map((item, index) => (
-        <div key={index} className={style.card}>
-          <h4>{item.product.nombre}</h4>
-          <img src={item.product.imagen} alt="" style={{width:150, height:240}} />
-          <h4>Precio: $ {" "} {item.product.precio * item.count}</h4>
-          <h4>Cantidad: {item.count} unidades</h4>
-          <Button variant="outlined" color="error" onClick={() => handleRemove(item.product.id)} sx={{marginTop:"3%"}}>Quitar producto del carrito</Button>
+          <FormBuy total={total} price={price} />
         </div>
-      ))}
-      
-      <FormBuy total={total} price={price}/>
-
-      </div>) :
-
-      (<div style={{fontSize:50, marginTop:"20%", marginBottom:"40%"}}>No tienes agregado ningun producto al carrito :(</div>)}
-
-
-
-      
+      ) : (
+        <div style={{ fontSize: 50, marginTop: "20%", marginBottom: "40%" }}>
+          No tienes agregado ningun producto al carrito :(
+        </div>
+      )}
     </div>
-
-  )
-}
+  );
+};
 
 export default Cart;

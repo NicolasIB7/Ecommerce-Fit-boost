@@ -15,15 +15,13 @@ function Footer() {
             alt=''
             className={style.imagen}
           />
-          <h3
-            className={style.h3}
-            style={{  color: "#59667D" }}>
+          <h3 className={style.h3} style={{ color: "#59667D" }}>
             fitboost.com © Bumeran.com
           </h3>
         </div>
 
         <div className={style.datos}>
-        <h3
+          <h3
             className={style.h3}
             style={{ marginBottom: "3%", color: "#0D164E" }}>
             Encontranos en
@@ -35,9 +33,8 @@ function Footer() {
             Buenos Aires, Argentina.
           </p>
         </div>
-        
+
         <div className={style.datos}>
-          
           <button className={style.boton1} style={{ marginBottom: "3%" }}>
             <AiOutlineMail style={{ marginRight: 18 }} />
             <a href='mailto:contacto@jobint.com'>contacto@fitboost.com </a>
@@ -62,7 +59,9 @@ function Footer() {
             </a>
           </span>
           <span className={style.icono}>
-            <a href='https://www.linkedin.com/company/nicolasbouvet7' title='Linkedin'>
+            <a
+              href='https://www.linkedin.com/company/nicolasbouvet7'
+              title='Linkedin'>
               <BsLinkedin />
             </a>
           </span>

@@ -33,15 +33,15 @@ const CustomProvider = ({ children }) => {
   };
 
   const removeProduct = (productId) => {
-    const newCart= cart.filter((element) => element.product.id !== productId);
-    setCart(newCart)
+    const newCart = cart.filter((element) => element.product.id !== productId);
+    setCart(newCart);
   };
 
   const contextValue = {
     clearCart,
     addToCart,
     cart,
-    removeProduct
+    removeProduct,
   };
 
   return <Provider value={contextValue}>{children}</Provider>;
