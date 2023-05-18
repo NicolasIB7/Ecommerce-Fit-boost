@@ -60,6 +60,11 @@ Esto iniciará el servidor y podrás acceder a la aplicación en tu navegador a 
 - Hacer responsive design el proyecto.
 - Agregar login simple o AUTH mediante firebase.
 
+
+## Video demostrativo:
+
+[![Video](https://img.youtube.com/vi/b7-VvbJBKM8/0.jpg)](https://youtu.be/Q-BwEki_F4g)
+
 ## Deploy:
 
 https://ecommerce-fit-boost.vercel.app/
