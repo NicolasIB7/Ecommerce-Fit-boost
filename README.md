@@ -54,6 +54,12 @@ Esto iniciará el servidor y podrás acceder a la aplicación en tu navegador a 
 
 - react-router-dom se utilizó para poder agregar rutas dinámicas al proyecto y poder navegar por diferentes componentes, tales como la landing, la vista de detalle, el carrito de compras, etc.
 
+## Cosas a implementar a futuro:
+
+- Poder agregar productos a favoritos para luego visualizarlos en otra sección y así facilitar la elección a la hora de la compra.
+- Hacer responsive design el proyecto.
+- Agregar login simple o AUTH mediante firebase.
+
 
 
 
