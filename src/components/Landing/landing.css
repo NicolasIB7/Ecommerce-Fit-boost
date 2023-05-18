@@ -96,6 +96,9 @@
   color: #222;
   animation: glowing 7s infinite;
   letter-spacing: 0.5em;
+  width: fit-content;
+  margin: auto;
+  margin-top: 5%;
 }
 
 @keyframes glowing {
@@ -104,7 +107,7 @@
     text-shadow: none;
   }
   50% {
-    color: #cfa219; /* Color brillante */
+    color: #cfa219; 
     text-shadow: 0 0 8px #997404, 0 0 16px #997404, 0 0 32px #997404;
   }
   100% {
