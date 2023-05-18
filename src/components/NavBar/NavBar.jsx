@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <div className={style.container}>
-      <NavLink to='/' className={style.logo}>
+      <NavLink to='/home' className={style.logo}>
         <Avatar
           alt='Fit Boost'
           src='https://t4.ftcdn.net/jpg/03/70/09/35/360_F_370093526_mJLYjlxn5Jb2pMsiQeyE7PMMnCp7NY8z.jpg'

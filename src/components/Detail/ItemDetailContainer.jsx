@@ -33,7 +33,7 @@ function ItemDetailContainer() {
       } else if (result.isDenied) {
         addToCart(product, count);
         Swal.fire("Producto agregado", "", "info").then(() => {
-          navigate("/");
+          navigate("/home");
         });
       }
     });
