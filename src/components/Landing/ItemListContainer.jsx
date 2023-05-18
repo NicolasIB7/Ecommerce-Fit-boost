@@ -6,6 +6,7 @@ import { getProducts, getProductByCategory } from "../../utils";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
+
 const ItemListContainer = (props) => {
   const { id } = useParams();
 
@@ -34,6 +35,8 @@ const ItemListContainer = (props) => {
   return (
     <div>
       {listProducts.length > 0 ? (
+        
+
         <div className={style.container}>
           {listProducts.map((product) => (
             <ItemList
@@ -43,9 +46,13 @@ const ItemListContainer = (props) => {
               descripcion={product.descripcion}
               precio={product.precio}
               categoria={product.categoria}
+              stock={product.stock}
             />
           ))}
         </div>
+
+
+
       ) : (
         <Box
           sx={{

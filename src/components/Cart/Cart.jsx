@@ -69,7 +69,7 @@ const Cart = () => {
                 style={{ width: 150, height: 240 }}
               />
               <h4>Precio: $ {item.product.precio * item.count}</h4>
-              <h4>Cantidad: {item.count} unidades</h4>
+              <h4 style={{marginTop:"3%", marginBottom:"5%"}}>Cantidad: {item.count} u</h4>
               <Button
                 variant='outlined'
                 color='error'

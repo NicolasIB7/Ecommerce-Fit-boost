@@ -16,10 +16,10 @@
 
 .card {
 
-  border: solid 2px rgb(0, 0, 0);
   padding: 1%;
   background-color: white;
   border-radius: 5%;
   margin-bottom: 3%;
   width: 120%;
+  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.50)
 }

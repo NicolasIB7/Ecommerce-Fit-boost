@@ -5,14 +5,17 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 
-const CartWidget = ({ onAdd }) => {
+const CartWidget = ({ onAdd, stock }) => {
   const [count, setCount] = useState(1);
 
   const handleSumar = () => {
+    if(count<stock){
     setCount(count + 1);
+    }
   };
   const handleRestar = () => {
-    setCount(count - 1);
+    if(count>1){
+    setCount(count - 1)};
   };
   return (
     <div className={style.container}>
@@ -29,8 +32,9 @@ const CartWidget = ({ onAdd }) => {
           {" "}
           +{" "}
         </Button>
+        
       </div>
-
+      
       <IconButton
         color='primary'
         aria-label='add to shopping cart'
@@ -38,6 +42,7 @@ const CartWidget = ({ onAdd }) => {
         style={{ scale: "0.8", color:"#004E64" }}>
         Agregar <AddShoppingCartIcon />
       </IconButton>
+      <p style={{fontSize:10, color:"brown", fontWeight:"bold"}}>Últimos {stock} en stock</p>
     </div>
   );
 };

@@ -6,8 +6,11 @@ import {
   getDoc,
   getDocs,
   query,
+  updateDoc,
   where,
 } from "firebase/firestore";
+
+
 
 export const getProducts = () => {
   const productsCollection = collection(db, "productos");
@@ -28,35 +31,72 @@ export const getProducts = () => {
     });
 };
 
-export const saveSale = (venta) => {
-  console.log("creando una venta");
 
+
+
+export const saveSale = (venta) => {
   const ventasCollection = collection(db, "ventas");
 
   return addDoc(ventasCollection, venta)
     .then((respuesta) => {
-      console.log(respuesta.id);
-      return respuesta.id;
+      const carrito = venta.carrito;
+
+      const productosCollection = collection(db, "productos");
+
+      const updateStockPromises = carrito.map((item) => {
+        const productoId = item.product.id;
+        const cantidadComprada = item.count;
+        console.log(cantidadComprada)
+
+        const productoDocRef = doc(productosCollection, productoId);
+
+        return getDoc(productoDocRef)
+          .then((productoDoc) => {
+            if (productoDoc.exists()) {
+              const productoData = productoDoc.data();
+              const stockActual = productoData.stock;
+
+
+              const nuevoStock = stockActual - cantidadComprada;
+
+
+              return updateDoc(productoDocRef, { stock: nuevoStock });
+            } else {
+              console.log(`El producto con ID ${productoId} no existe`);
+              return Promise.resolve(); 
+            }
+          })
+          .catch((err) => console.log(err));
+      });
+
+
+      return Promise.all(updateStockPromises)
+        .then(() => respuesta.id)
+        .catch((err) => console.log(err));
     })
     .catch((err) => {
       console.log(err);
     });
 };
 
+
+
+
+
+
+
+
 export const getProductDetail = (id) => {
-  console.log(id);
   const productsCollection = collection(db, "productos");
   const docRef = doc(productsCollection, id);
 
   return getDoc(docRef)
     .then((respuesta) => {
-      console.log(respuesta);
       const productData = respuesta.data();
       const producto = {
         id: respuesta.id,
         ...productData,
       };
-      console.log(producto);
       return producto;
     })
     .catch((error) => {

@@ -8,6 +8,7 @@ import "./ItemDetail.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import { getProductDetail } from "../../utils";
+import Paper from '@mui/material/Paper';
 
 function ItemDetailContainer() {
   const navigate = useNavigate();
@@ -61,6 +62,12 @@ function ItemDetailContainer() {
           <CircularProgress sx={{color:"white"}} />
         </Box>
       ) : product ? (
+
+
+
+
+
+
         <div class='containerD'>
           <div class='prod'>
             <h2 class='h2'>{product.nombre}</h2>
@@ -69,9 +76,14 @@ function ItemDetailContainer() {
             <h3 class='h3'>$ {product.precio}</h3>
           </div>
           <div class='cart'>
-            <CartWidget onAdd={handleAdd} />
+            <CartWidget onAdd={handleAdd} stock={product.stock} />
           </div>
         </div>
+
+
+
+   
+
       ) : (
         <div style={{ fontSize: 50, marginTop: "15%", marginBottom: "40%" }}>
           No se encontró el producto.

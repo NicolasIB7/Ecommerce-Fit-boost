@@ -14,6 +14,15 @@ const ItemList = (props) => {
           <p>Ver detalles</p>
         </Button>
       </NavLink>
+
+      {props.stock>0 ? 
+      (
+      <h4 style={{marginTop:"7%", fontWeight:"bolder", color:"red"}}>Stock:{" "} {props.stock} </h4>
+      )
+        : (<h4>No hay stock disponible </h4>)
+    }
+
+      
     </div>
   );
 };
