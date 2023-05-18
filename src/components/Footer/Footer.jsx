@@ -15,7 +15,7 @@ function Footer() {
             alt=''
             className={style.imagen}
           />
-          <h3 className={style.h3} style={{ color: "#59667D" }}>
+          <h3 className={style.h3} style={{ color: "white" }}>
             fitboost.com © Bumeran.com
           </h3>
         </div>
@@ -23,27 +23,27 @@ function Footer() {
         <div className={style.datos}>
           <h3
             className={style.h3}
-            style={{ marginBottom: "3%", color: "#0D164E" }}>
+            style={{ marginBottom: "3%", color: "white" }}>
             Encontranos en
           </h3>
           <p
             className={style.p}
-            style={{ marginBottom: "10%", color: "#356174" }}>
+            style={{ marginBottom: "10%", color: "grey" }}>
             Acevedo 160, Villa Crespo, Ciudad Autónoma de <br />
             Buenos Aires, Argentina.
           </p>
         </div>
 
         <div className={style.datos}>
-          <button className={style.boton1} style={{ marginBottom: "3%" }}>
+          <button className={style.boton1} style={{ marginBottom: "3%", color:"white" }}>
             <AiOutlineMail style={{ marginRight: 18 }} />
-            <a href='mailto:contacto@jobint.com'>contacto@fitboost.com </a>
+            <a href='mailto:nicobouvet7@gmail.com' style={{textDecoration:"none", color:"white"}}>contacto@fitboost.com </a>
           </button>
           <br />
           <button className={style.boton2}>
             {" "}
-            <BsFillTelephoneFill style={{ marginRight: 18 }} />
-            <a href='tel://0810-333-4499'> 1133829878 </a>
+            <BsFillTelephoneFill style={{ marginRight: 18, color:"white" }} />
+            <a href='tel://1133829878' style={{textDecoration:"none", color:"white"}}> 1133829878 </a>
           </button>
         </div>
       </div>
@@ -54,21 +54,22 @@ function Footer() {
         </p>
         <div className={style.iconos}>
           <span className={style.icono1}>
-            <a href='https://www.instagram.com/nicobouvet7' title='Instagram'>
+            <a href='https://www.instagram.com/nicobouvet7' title='Instagram' style={{color:"white"}}>
               <BsInstagram />
             </a>
           </span>
           <span className={style.icono}>
             <a
               href='https://www.linkedin.com/company/nicolasbouvet7'
-              title='Linkedin'>
-              <BsLinkedin />
+              title='Linkedin'
+              style={{color:"white"}}>
+              <BsLinkedin  />
             </a>
           </span>
         </div>
         <p className={style.p}>
           {" "}
-          <Link href='/'>Back to top</Link>
+          <Link href='/' style={{textDecoration:"none", color: "#AFA0CD"}}>Back to top</Link>
         </p>
       </div>
     </div>

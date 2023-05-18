@@ -56,8 +56,9 @@ function ItemDetailContainer() {
             marginTop: "15%",
             marginBottom: "30%",
             scale: "1.3",
+            
           }}>
-          <CircularProgress />
+          <CircularProgress sx={{color:"white"}} />
         </Box>
       ) : product ? (
         <div class='containerD'>

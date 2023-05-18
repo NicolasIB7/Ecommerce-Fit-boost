@@ -35,7 +35,7 @@ const CartIcon = () => {
   return (
     <IconButton
       aria-label='cart'
-      sx={{ marginRight: 10, marginTop: 5, scale: "1.4" }}>
+      sx={{ marginRight: 10, marginTop: 5, scale: "1.4", color: "white" }}>
       <StyledBadge badgeContent={total} color='secondary'>
         <ShoppingCartIcon />
       </StyledBadge>

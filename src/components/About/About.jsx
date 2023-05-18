@@ -10,6 +10,7 @@ function About() {
         marginTop: "10%",
         padding: "5%",
         border: "solid",
+        backgroundColor:"#004E64"
       }}>
       <h1 style={{ fontSize: 40, textDecoration: "underline" }}>FIT-BOOST</h1>
 

@@ -33,7 +33,10 @@ const NavBar = () => {
           aria-controls={open ? "demo-positioned-menu" : undefined}
           aria-haspopup='true'
           aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}>
+          onClick={handleClick}
+          sx={{backgroundColor:"#398397", color:"white", textDecoration:"none"}}
+          >
+            
           Categorías
         </Button>
         <Menu
@@ -49,29 +52,30 @@ const NavBar = () => {
           transformOrigin={{
             vertical: "top",
             horizontal: "left",
-          }}>
+          }}
+          >
           <MenuItem onClick={handleClose}>
             {" "}
-            <NavLink to='/category/2' style={{ textDecoration: "none" }}>
+            <NavLink to='/category/2' style={{ textDecoration: "none", color:"black" }}>
               Shakers{" "}
             </NavLink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             {" "}
-            <NavLink to='/category/1' style={{ textDecoration: "none" }}>
+            <NavLink to='/category/1' style={{ textDecoration: "none", color:"black" }}>
               Suplementos
             </NavLink>
           </MenuItem>
         </Menu>
 
-        <Button variant='contained' sx={{ marginLeft: 3 }}>
-          <NavLink to='/about' style={{ textDecoration: "none" }}>
+        <Button variant='contained' className={style.button} sx={{ marginLeft: 10, backgroundColor:"#398397" }}>
+          <NavLink to='/about' style={{ textDecoration: "none",color:"white"  }}>
             Acerca de nosotros
           </NavLink>{" "}
         </Button>
-        <Button variant='contained' sx={{ marginLeft: 3 }}>
+        <Button variant='contained' className={style.button} sx={{ marginLeft: 3, backgroundColor:"#398397" }}>
           {" "}
-          <NavLink to='/contact' style={{ textDecoration: "none" }}>
+          <NavLink to='/contact' style={{ textDecoration: "none", color:"white"  }}>
             Contacto
           </NavLink>{" "}
         </Button>

@@ -55,7 +55,7 @@ const ItemListContainer = (props) => {
             marginBottom: "30%",
             scale: "1.3",
           }}>
-          <CircularProgress />
+          <CircularProgress sx={{color:"white"}} />
         </Box>
       )}
     </div>

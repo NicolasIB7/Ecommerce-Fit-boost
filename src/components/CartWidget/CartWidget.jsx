@@ -20,12 +20,12 @@ const CartWidget = ({ onAdd }) => {
       <strong>{count}</strong>
 
       <div className={style.botones}>
-        <Button variant='text' onClick={handleRestar} sx={{ fontSize: 25 }}>
+        <Button variant='text' onClick={handleRestar} sx={{ fontSize: 25, color:"#004E64" }}>
           {" "}
           -{" "}
         </Button>
 
-        <Button variant='text' onClick={handleSumar} sx={{ fontSize: 25 }}>
+        <Button variant='text' onClick={handleSumar} sx={{ fontSize: 25, color:"#004E64" }}>
           {" "}
           +{" "}
         </Button>
@@ -35,7 +35,7 @@ const CartWidget = ({ onAdd }) => {
         color='primary'
         aria-label='add to shopping cart'
         onClick={() => onAdd(count)}
-        style={{ scale: "0.8" }}>
+        style={{ scale: "0.8", color:"#004E64" }}>
         Agregar <AddShoppingCartIcon />
       </IconButton>
     </div>

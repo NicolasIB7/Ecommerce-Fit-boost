@@ -81,9 +81,9 @@ function FormBuy({ total, price }) {
 
   return (
     <div className={style.container}>
-      <h3>Cantidad total de productos: {total}</h3>
+      <h3>Cantidad total de productos: <span style={{color:"brown"}}>{total}</span></h3>
 
-      <h3> Precio total: $ {price}</h3>
+      <h3 > Precio total: <span style={{color:"brown"}}> $ {price}</span></h3>
 
       <Accordion>
         <AccordionSummary

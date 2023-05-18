@@ -1,18 +1,25 @@
 .vaciar {
   right: 10%;
   height: fit-content;
+  background-color: white;
 }
 
 .container {
   width: 80%;
   margin: auto;
   margin-top: 5%;
+  margin-bottom: 30%;
 }
 .container2 {
   display: flex;
 }
 
 .card {
-  border: solid 1px rgba(0, 0, 0, 0.075);
+
+  border: solid 2px rgb(0, 0, 0);
   padding: 1%;
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 3%;
+  width: 120%;
 }

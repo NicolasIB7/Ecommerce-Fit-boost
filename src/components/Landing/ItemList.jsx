@@ -10,7 +10,7 @@ const ItemList = (props) => {
       <img src={props.imagen} alt='' />
       <h3>$ {props.precio}</h3>
       <NavLink to={`/item/${props.id}`}>
-        <Button variant='outlined' size='small' sx={{ height: 30, width: 300 }}>
+        <Button variant='outlined' size='small' sx={{ height: 35, width: 300, color:"#004E64", fontSize:14 }}>
           <p>Ver detalles</p>
         </Button>
       </NavLink>

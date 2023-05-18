@@ -11,8 +11,9 @@ img {
 }
 
 .cont {
-  border: solid rgba(0, 0, 0, 0.315);
+  border: solid #004E64;
   padding-top: 5%;
   padding-bottom: 5%;
   border-radius: 10px;
+  background-color: white;
 }

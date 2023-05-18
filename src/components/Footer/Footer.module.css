@@ -1,15 +1,17 @@
 .all {
-  width: 95%;
+  
   font-family: "Poppins, Arial, Helvetica, sans-serif";
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 1%;
-  background-color: #35617446;
+  background-color: rgba(0, 0, 0, 0.267);
 }
 
 .div1 {
   display: flex;
   justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
+
 }
 
 .div2 {
@@ -17,6 +19,8 @@
   justify-content: space-between;
   margin-top: 2%;
   color: #afa0cd;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .h3 {
@@ -36,6 +40,8 @@
 
 .p {
   font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 .boton1 {
@@ -45,7 +51,8 @@
   color: #356174;
   font-weight: bold;
   text-decoration: none;
-  background-color: white;
+  background-color: #004E64;
+
 }
 .boton2 {
   font-size: 23px;
@@ -53,21 +60,22 @@
   border: none;
   color: #356174;
   font-weight: bold;
-  background-color: white;
+  background-color: #004E64
 }
 
 .boton1:hover {
   border-radius: 50px;
-  background-color: #ff1a88;
+  background-color: #006B89;
 }
 .boton2:hover {
   border-radius: 50px;
-  background-color: #ff1a88;
+  background-color: #006B89;
 }
 
 .imagen {
   bottom: 15%;
   scale: 0.5;
+  border-radius: 50%;
 }
 
 .iconos {

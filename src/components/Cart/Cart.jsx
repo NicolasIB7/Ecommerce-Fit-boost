@@ -45,16 +45,20 @@ const Cart = () => {
   return (
     <div className={style.container}>
       {cart.length > 0 ? (
+        < div style={{display:"flex"}}>
         <div className={style.container2}>
           <Button
             onClick={handleClear}
             color='error'
+            sx={{backgroundColor:"white"}}
             variant='outlined'
             startIcon={<DeleteIcon />}
             className={style.vaciar}>
             {" "}
             Vaciar carrito
           </Button>
+
+          <div>
 
           {cart.map((item, index) => (
             <div key={index} className={style.card}>
@@ -70,13 +74,16 @@ const Cart = () => {
                 variant='outlined'
                 color='error'
                 onClick={() => handleRemove(item.product.id)}
-                sx={{ marginTop: "3%" }}>
+                sx={{ marginTop: "3%", marginBottom:"3%" }}>
                 Quitar producto del carrito
               </Button>
+              
             </div>
-          ))}
+          ))}</div>
 
-          <FormBuy total={total} price={price} />
+          
+        </div>
+        <FormBuy total={total} price={price} />
         </div>
       ) : (
         <div style={{ fontSize: 50, marginTop: "20%", marginBottom: "40%" }}>

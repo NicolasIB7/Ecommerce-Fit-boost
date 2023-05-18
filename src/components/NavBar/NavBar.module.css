@@ -1,5 +1,5 @@
 .container {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.267);
   display: flex;
   height: 150px;
 }
@@ -16,4 +16,14 @@
 
 .logo:hover {
   scale: 1.1;
+}
+
+
+.button{
+  background-color:#398397;
+  color:white
+}
+
+.button:hover{
+  background-color:#6dc5dd ;
 }
