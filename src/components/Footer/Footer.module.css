@@ -1,5 +1,4 @@
 .all {
-  
   font-family: "Poppins, Arial, Helvetica, sans-serif";
   margin: auto;
   margin-top: 5%;
@@ -11,7 +10,6 @@
   justify-content: space-between;
   margin-left: 3%;
   margin-right: 3%;
-
 }
 
 .div2 {
@@ -51,8 +49,7 @@
   color: #356174;
   font-weight: bold;
   text-decoration: none;
-  background-color: #004E64;
-
+  background-color: #004e64;
 }
 .boton2 {
   font-size: 23px;
@@ -60,16 +57,16 @@
   border: none;
   color: #356174;
   font-weight: bold;
-  background-color: #004E64
+  background-color: #004e64;
 }
 
 .boton1:hover {
   border-radius: 50px;
-  background-color: #006B89;
+  background-color: #006b89;
 }
 .boton2:hover {
   border-radius: 50px;
-  background-color: #006B89;
+  background-color: #006b89;
 }
 
 .imagen {

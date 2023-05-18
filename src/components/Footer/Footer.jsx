@@ -26,24 +26,33 @@ function Footer() {
             style={{ marginBottom: "3%", color: "white" }}>
             Encontranos en
           </h3>
-          <p
-            className={style.p}
-            style={{ marginBottom: "10%", color: "grey" }}>
+          <p className={style.p} style={{ marginBottom: "10%", color: "grey" }}>
             Acevedo 160, Villa Crespo, Ciudad Autónoma de <br />
             Buenos Aires, Argentina.
           </p>
         </div>
 
         <div className={style.datos}>
-          <button className={style.boton1} style={{ marginBottom: "3%", color:"white" }}>
+          <button
+            className={style.boton1}
+            style={{ marginBottom: "3%", color: "white" }}>
             <AiOutlineMail style={{ marginRight: 18 }} />
-            <a href='mailto:nicobouvet7@gmail.com' style={{textDecoration:"none", color:"white"}}>contacto@fitboost.com </a>
+            <a
+              href='mailto:nicobouvet7@gmail.com'
+              style={{ textDecoration: "none", color: "white" }}>
+              contacto@fitboost.com{" "}
+            </a>
           </button>
           <br />
           <button className={style.boton2}>
             {" "}
-            <BsFillTelephoneFill style={{ marginRight: 18, color:"white" }} />
-            <a href='tel://1133829878' style={{textDecoration:"none", color:"white"}}> 1133829878 </a>
+            <BsFillTelephoneFill style={{ marginRight: 18, color: "white" }} />
+            <a
+              href='tel://1133829878'
+              style={{ textDecoration: "none", color: "white" }}>
+              {" "}
+              1133829878{" "}
+            </a>
           </button>
         </div>
       </div>
@@ -54,7 +63,10 @@ function Footer() {
         </p>
         <div className={style.iconos}>
           <span className={style.icono1}>
-            <a href='https://www.instagram.com/nicobouvet7' title='Instagram' style={{color:"white"}}>
+            <a
+              href='https://www.instagram.com/nicobouvet7'
+              title='Instagram'
+              style={{ color: "white" }}>
               <BsInstagram />
             </a>
           </span>
@@ -62,14 +74,16 @@ function Footer() {
             <a
               href='https://www.linkedin.com/company/nicolasbouvet7'
               title='Linkedin'
-              style={{color:"white"}}>
-              <BsLinkedin  />
+              style={{ color: "white" }}>
+              <BsLinkedin />
             </a>
           </span>
         </div>
         <p className={style.p}>
           {" "}
-          <Link href='/' style={{textDecoration:"none", color: "#AFA0CD"}}>Back to top</Link>
+          <Link href='/' style={{ textDecoration: "none", color: "#AFA0CD" }}>
+            Back to top
+          </Link>
         </p>
       </div>
     </div>

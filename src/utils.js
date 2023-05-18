@@ -10,8 +10,6 @@ import {
   where,
 } from "firebase/firestore";
 
-
-
 export const getProducts = () => {
   const productsCollection = collection(db, "productos");
 
@@ -31,9 +29,6 @@ export const getProducts = () => {
     });
 };
 
-
-
-
 export const saveSale = (venta) => {
   const ventasCollection = collection(db, "ventas");
 
@@ -46,7 +41,7 @@ export const saveSale = (venta) => {
       const updateStockPromises = carrito.map((item) => {
         const productoId = item.product.id;
         const cantidadComprada = item.count;
-        console.log(cantidadComprada)
+        console.log(cantidadComprada);
 
         const productoDocRef = doc(productosCollection, productoId);
 
@@ -56,19 +51,16 @@ export const saveSale = (venta) => {
               const productoData = productoDoc.data();
               const stockActual = productoData.stock;
 
-
               const nuevoStock = stockActual - cantidadComprada;
-
 
               return updateDoc(productoDocRef, { stock: nuevoStock });
             } else {
               console.log(`El producto con ID ${productoId} no existe`);
-              return Promise.resolve(); 
+              return Promise.resolve();
             }
           })
           .catch((err) => console.log(err));
       });
-
 
       return Promise.all(updateStockPromises)
         .then(() => respuesta.id)
@@ -78,13 +70,6 @@ export const saveSale = (venta) => {
       console.log(err);
     });
 };
-
-
-
-
-
-
-
 
 export const getProductDetail = (id) => {
   const productsCollection = collection(db, "productos");

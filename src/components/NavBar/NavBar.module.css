@@ -18,12 +18,11 @@
   scale: 1.1;
 }
 
-
-.button{
-  background-color:#398397;
-  color:white
+.button {
+  background-color: #398397;
+  color: white;
 }
 
-.button:hover{
-  background-color:#6dc5dd ;
+.button:hover {
+  background-color: #6dc5dd;
 }

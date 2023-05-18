@@ -15,11 +15,10 @@
 }
 
 .card {
-
   padding: 1%;
   background-color: white;
   border-radius: 5%;
   margin-bottom: 3%;
   width: 120%;
-  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.50)
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
 }

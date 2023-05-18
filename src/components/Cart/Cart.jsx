@@ -45,45 +45,44 @@ const Cart = () => {
   return (
     <div className={style.container}>
       {cart.length > 0 ? (
-        < div style={{display:"flex"}}>
-        <div className={style.container2}>
-          <Button
-            onClick={handleClear}
-            color='error'
-            sx={{backgroundColor:"white"}}
-            variant='outlined'
-            startIcon={<DeleteIcon />}
-            className={style.vaciar}>
-            {" "}
-            Vaciar carrito
-          </Button>
+        <div style={{ display: "flex" }}>
+          <div className={style.container2}>
+            <Button
+              onClick={handleClear}
+              color='error'
+              sx={{ backgroundColor: "white" }}
+              variant='outlined'
+              startIcon={<DeleteIcon />}
+              className={style.vaciar}>
+              {" "}
+              Vaciar carrito
+            </Button>
 
-          <div>
-
-          {cart.map((item, index) => (
-            <div key={index} className={style.card}>
-              <h4>{item.product.nombre}</h4>
-              <img
-                src={item.product.imagen}
-                alt=''
-                style={{ width: 150, height: 240 }}
-              />
-              <h4>Precio: $ {item.product.precio * item.count}</h4>
-              <h4 style={{marginTop:"3%", marginBottom:"5%"}}>Cantidad: {item.count} u</h4>
-              <Button
-                variant='outlined'
-                color='error'
-                onClick={() => handleRemove(item.product.id)}
-                sx={{ marginTop: "3%", marginBottom:"3%" }}>
-                Quitar producto del carrito
-              </Button>
-              
+            <div>
+              {cart.map((item, index) => (
+                <div key={index} className={style.card}>
+                  <h4>{item.product.nombre}</h4>
+                  <img
+                    src={item.product.imagen}
+                    alt=''
+                    style={{ width: 150, height: 240 }}
+                  />
+                  <h4>Precio: $ {item.product.precio * item.count}</h4>
+                  <h4 style={{ marginTop: "3%", marginBottom: "5%" }}>
+                    Cantidad: {item.count} u
+                  </h4>
+                  <Button
+                    variant='outlined'
+                    color='error'
+                    onClick={() => handleRemove(item.product.id)}
+                    sx={{ marginTop: "3%", marginBottom: "3%" }}>
+                    Quitar producto del carrito
+                  </Button>
+                </div>
+              ))}
             </div>
-          ))}</div>
-
-          
-        </div>
-        <FormBuy total={total} price={price} />
+          </div>
+          <FormBuy total={total} price={price} />
         </div>
       ) : (
         <div style={{ fontSize: 50, marginTop: "20%", marginBottom: "40%" }}>
