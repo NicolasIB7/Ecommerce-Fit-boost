@@ -15,6 +15,10 @@ Bienvenido al repositorio del e-commerce especializado en la venta de suplemento
  - Para la realización de esta web se utilizó React.js junto con firebase, se profundizó en el uso del contexto para poder tener un estado global y realizar diferentes funcionalidades relacionandolas con el carrito de compras, detalles del producto, etc.
   
  - Se utilizó firebase para poder cargar todos los productos que se encuentran a la venta, se realizaron métodos para poder obtener los productos, obtener el detalle, crear un nuevo pedido.
+ 
+ - Al finalizar la compra se crea un nuevo documento de venta en la base de datos de firebase, allí queda registrado los datos que se obtuvieron del formulario así como también de los productos comprados.
+ 
+ - Se implementó un metodo mediante firebase para que la web funcione mediante stock, el mismo será visible en todo momento y cada vez que se efectue una compra este disminuirá. 
 
 ## Requisitos de instalación
 
@@ -59,6 +63,7 @@ Esto iniciará el servidor y podrás acceder a la aplicación en tu navegador a 
 - Poder agregar productos a favoritos para luego visualizarlos en otra sección y así facilitar la elección a la hora de la compra.
 - Hacer responsive design el proyecto.
 - Agregar login simple o AUTH mediante firebase.
+- Luego de implementar el login, implementar mediante local storage que las compras realizadas queden guardadas según el ususario que se loguee.
 
 
 ## Video demostrativo:
